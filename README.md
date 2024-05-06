@@ -7,7 +7,7 @@ argon build
 ```
 Or install using Wally:
 ```bash
-wally install
+infraction7/physicstween@1.0.1-rc5
 ```
 
 ## Usage
