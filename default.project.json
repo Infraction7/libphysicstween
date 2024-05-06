@@ -2,5 +2,8 @@
   "name": "PhysicsTween",
   "tree": {
     "$path": "PhysicsTween"
-  }
+  },
+  "ignoreGlobs": [
+    "PhysicsTween/wally.toml"
+  ]
 }
