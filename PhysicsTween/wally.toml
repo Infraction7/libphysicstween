@@ -1,0 +1,9 @@
+[package]
+name = "infraction7/physicstween"
+version = "1.0.1-rc5"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+include = ["./PhysicsTween/**"]
+exclude = [""]
+
+[dependencies]

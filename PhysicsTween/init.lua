@@ -2,7 +2,6 @@
 local TweenService = game:GetService("TweenService")
 local RunService = game:GetService("RunService")
 local HttpService = game:GetService("HttpService")
-local signal = require(script.signal)
 local lib = {}
 lib.__index = lib
 
@@ -18,7 +17,6 @@ local function new(instance: Model, tweenInfo: {time: number, easingStyle: Enum.
     this.renderSteppedFn = function(deltaTime: number)
         this.alpha += (deltaTime / tweenInfo.time)
         if this.alpha >= 1 then
-            this.Completed:Fire()
             this:Stop()
         end
         local alphaPrime = TweenService:GetValue(this.alpha, this.tweenInfo.easingStyle, this.tweenInfo.easingDirection)
