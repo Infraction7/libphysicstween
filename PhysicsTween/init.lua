@@ -13,7 +13,6 @@ local function new(instance: Model, tweenInfo: {time: number, easingStyle: Enum.
     this.originCFrame = this.model:GetPivot()
     this.targetCFrame = targetCFrame
     this.tweenInfo = tweenInfo
-    this.Completed = signal.new()
     this.renderSteppedFn = function(deltaTime: number)
         this.alpha += (deltaTime / tweenInfo.time)
         if this.alpha >= 1 then
