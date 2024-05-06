@@ -5,6 +5,11 @@ To build the model use:
 ```bash
 argon build
 ```
+Or install using Wally:
+```bash
+wally install
+```
+
 ## Usage
 require() the module and execute the returned function
 use :Play() and :Stop() on created objects
